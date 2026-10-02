@@ -1,0 +1,523 @@
+<!DOCTYPE html><html lang="pt-BR" style=""><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"><meta content="mobile_tab" name="shell-type"><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "tertiary-container": "#9c4c01", "secondary-container": "#afd2fe", "on-surface-variant": "#414751", "secondary-fixed": "#d1e4ff", "surface": "#f6f9ff", "tertiary-fixed-dim": "#ffb787", "surface-container-high": "#d6ebff", "on-tertiary-container": "#ffd7bf", "on-error": "#ffffff", "surface-container-highest": "#d0e5f9", "surface-dim": "#c8ddf0", "on-tertiary": "#ffffff", "surface-container": "#e0f0ff", "primary-container": "#0464ae", "inverse-on-surface": "#e6f2ff", "secondary-fixed-dim": "#a6c9f5", "on-primary-container": "#cce0ff", "on-tertiary-fixed-variant": "#723600", "error": "#ba1a1a", "on-surface": "#071d2c", "on-secondary": "#ffffff", "on-primary": "#ffffff", "outline-variant": "#c1c7d3", "on-tertiary-fixed": "#311300", "primary-fixed": "#d3e4ff", "error-container": "#ffdad6", "on-background": "#071d2c", "on-primary-fixed": "#001c38", "surface-container-lowest": "#ffffff", "on-error-container": "#93000a", "primary-fixed-dim": "#a2c9ff", "background": "#f6f9ff", "primary": "#004c87", "inverse-primary": "#a2c9ff", "tertiary": "#783900", "tertiary-fixed": "#ffdcc7", "on-secondary-container": "#375a80", "surface-variant": "#d0e5f9", "outline": "#717782", "surface-bright": "#f6f9ff", "secondary": "#3e6187", "surface-container-low": "#ebf5ff", "on-secondary-fixed-variant": "#24496e", "on-secondary-fixed": "#001d36", "surface-tint": "#0060a8", "on-primary-fixed-variant": "#004881", "inverse-surface": "#1e3241" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-xs": "0.25rem", "space-lg": "1.5rem", "space-sm": "0.5rem", "space-xl": "2.5rem", "space-md": "1rem", "margin-mobile": "1rem", "gutter": "1.5rem", "margin": "2rem", "gutter-mobile": "1rem" }, "fontFamily": { "label-sm": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "display-lg-mobile": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"], "display-lg": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"] }, "fontSize": { "label-sm": ["0.75rem", {"lineHeight": "1rem", "letterSpacing": "0.04em", "fontWeight": "600"}], "body-lg": ["1.125rem", {"lineHeight": "1.75rem", "fontWeight": "400"}], "display-lg-mobile": ["2.25rem", {"lineHeight": "2.75rem", "letterSpacing": "-0.02em", "fontWeight": "800"}], "headline-md": ["1.25rem", {"lineHeight": "1.75rem", "fontWeight": "600"}], "title-md": ["1.125rem", {"lineHeight": "1.5rem", "fontWeight": "600"}], "display-lg": ["3.5rem", {"lineHeight": "4rem", "letterSpacing": "-0.02em", "fontWeight": "800"}], "body-sm": ["0.875rem", {"lineHeight": "1.25rem", "fontWeight": "400"}], "headline-lg-mobile": ["1.5rem", {"lineHeight": "2rem", "letterSpacing": "-0.01em", "fontWeight": "700"}], "label-md": ["0.875rem", {"lineHeight": "1.25rem", "letterSpacing": "0.01em", "fontWeight": "600"}], "body-md": ["1rem", {"lineHeight": "1.5rem", "fontWeight": "400"}], "headline-lg": ["2rem", {"lineHeight": "2.5rem", "letterSpacing": "-0.01em", "fontWeight": "700"}] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 w-full z-50 pt-safe bg-[#03335a] shadow-[0_4px_15px_rgba(3,51,90,0.25)]"><div class="h-16 px-4 flex items-center justify-between gap-3"><div class="flex items-center gap-3"><div class="py-1 px-1.5 rounded-lg flex items-center"><img alt="BRP Viagens Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1V2RxNqttRD6iEF6BBrKmTd8jZZriI-a-HS958RWwn1CVFxbIp-AqdmBxbbtPZNqzk_tYaGC33XPsHjnPiXPitoBgGsJbgyd3KfAHjl7r3Gp6Aaw7YjtYQOYt2HCsOrRnaxa7LPJQqrU86ZSHuT4rNKOglA2iBu2JiiqZD_QYzzyRbElGH2lUYJPu8nQIrWMeAnVM0RxTuagcUcocl0RtOOR87VSKlC_SKcCx0X_XR235SVoE7vm46VICg"></div><div class="h-6 w-px bg-white/20"></div><div class="flex flex-col"><span class="font-label-sm text-label-sm text-cyan-300 font-bold tracking-wider uppercase flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>Grupo Promocional</span></div></div><div class="flex items-center gap-2"><div class="flex items-center gap-1 bg-white/10 px-2.5 py-1 rounded-full text-white/90 font-label-sm text-label-sm border border-white/10"><span class="material-symbols-outlined text-[16px] text-cyan-300">verified</span>Cadastur</div><div class="w-8 h-8 rounded-full bg-primary-container text-white flex items-center justify-center shadow-inner"><span class="material-symbols-outlined text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-16 pb-24 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- HERO SECTION -->
+<section class="relative px-4 pt-6 pb-8 flex flex-col items-center text-center overflow-hidden">
+<div class="absolute -top-24 left-1/2 -translate-x-1/2 w-80 h-80 rounded-full bg-primary/15 blur-3xl pointer-events-none"></div>
+<div class="absolute top-40 right-2 w-48 h-48 rounded-full bg-cyan-200/40 blur-2xl pointer-events-none"></div>
+<!-- Exclusive badge -->
+<div class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-secondary-fixed text-primary font-bold shadow-sm mb-4 border border-primary/20">
+<span class="material-symbols-outlined text-[18px] text-[#25D366]" style="font-variation-settings: &quot;FILL&quot; 1;">chat</span>
+<span class="font-label-sm text-label-sm tracking-wide">GRUPO EXCLUSIVO NO WHATSAPP</span>
+</div>
+<!-- Main Headings -->
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface uppercase tracking-tight max-w-sm mb-2 font-extrabold">
+      GRUPO DE PROMOÇÕES&nbsp;<div><span class="text-primary-container">BRP VIAGENS</span>
+</div></h1>
+<p class="font-title-md text-title-md text-secondary font-semibold max-w-xs mb-4">
+      As melhores oportunidades de viagem direto no seu WhatsApp
+    </p>
+<!-- Visual Hero Snippet: WhatsApp VIP preview pill -->
+<div class="w-full max-w-xs bg-surface-container-lowest rounded-xl p-3.5 shadow-md flex items-center gap-3 mb-4 text-left border border-outline-variant/30">
+<div class="relative flex-shrink-0 w-11 h-11 rounded-full bg-white border border-outline-variant/30 flex items-center justify-center shadow-sm overflow-visible"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCO446IypMptOCKfn_WET-0TglCMMwQNzNcmmYBi7_qSFToXxvIu5JEXs_D4K3AT7nh1tzxXHucu_CG292qC-1kA97qRUl-cPnyerfqQiIpPDrfuqmXC3OMd7v-w_eFZz-1pk7S_y7oiU9lbSdf71gH2_TooBZzeuigh-K5PGwoagm9-Ji5xCFLo00fGY2b8hi5BfNBm5rfaakNwkq97yRRz6Vo0qWjrIKkEdxOa_p7NmHLsurn7pMstPI3Kt_Z1mnDMQ" alt="Logo BRP Viagens" class="w-8 h-8 object-contain rounded-full"><span class="absolute bottom-0 right-0 w-3 h-3 rounded-full bg-[#25D366] ring-2 ring-surface-container-lowest"></span></div>
+<div class="min-w-0 flex-1">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-bold truncate">PROMOÇÕES - BRP VIAG...<br></span>
+<span class="font-label-sm text-label-sm text-primary font-bold">Hoje</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">🔥 Nova tarifa relâmpago liberada agora!</p>
+</div>
+</div>
+<!-- Description -->
+<p class="font-body-md text-body-md text-on-surface-variant max-w-sm mb-6 leading-relaxed">
+      Receba promoções selecionadas de passagens aéreas, pacotes nacionais e internacionais, hospedagens e muito mais. A BRP Viagens busca oportunidades para você viajar pagando menos, com segurança e suporte de uma agência de verdade.
+    </p>
+<!-- CTA Hero Button -->
+<a class="w-full max-w-xs flex items-center justify-center gap-2 h-14 rounded-full bg-[#25D366] hover:bg-[#1ebd5b] text-white shadow-lg shadow-[#25D366]/30 active:scale-95 transition-all duration-200" href="https://chat.whatsapp.com/H2jgUQfgwQwDPpwHHBrO0p" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[24px]">chat</span>
+<span class="font-label-md text-label-md font-bold tracking-wide">QUERO ENTRAR NO GRUPO DE PROMOÇÕES</span>
+</a>
+<!-- Confidence bullets -->
+<div class="w-full max-w-xs mt-6 flex flex-col gap-2.5 text-left bg-surface-container-low rounded-xl p-4 border border-outline-variant/30">
+<div class="flex items-center gap-2.5 text-on-surface">
+<span class="material-symbols-outlined text-primary-container text-[20px]" style="font-variation-settings: &quot;FILL&quot; 1;">check_circle</span>
+<span class="font-body-sm text-body-sm font-semibold">Participação gratuita</span>
+</div>
+<div class="flex items-center gap-2.5 text-on-surface">
+<span class="material-symbols-outlined text-primary-container text-[20px]" style="font-variation-settings: &quot;FILL&quot; 1;">check_circle</span>
+<span class="font-body-sm text-body-sm font-semibold">Sem spam</span>
+</div>
+<div class="flex items-center gap-2.5 text-on-surface">
+<span class="material-symbols-outlined text-primary-container text-[20px]" style="font-variation-settings: &quot;FILL&quot; 1;">check_circle</span>
+<span class="font-body-sm text-body-sm font-semibold">Promoções nacionais e internacionais</span>
+</div>
+<div class="flex items-center gap-2.5 text-on-surface">
+<span class="material-symbols-outlined text-primary-container text-[20px]" style="font-variation-settings: &quot;FILL&quot; 1;">check_circle</span>
+<span class="font-body-sm text-body-sm font-semibold">Atendimento humano da BRP Viagens</span>
+</div>
+</div>
+</section>
+<!-- OFERTAS DO GRUPO SECTION -->
+<section class="px-4 py-8 flex flex-col bg-surface-container-lowest">
+<div class="flex flex-col text-center items-center mb-6">
+<span class="font-label-sm text-label-sm text-primary-container uppercase font-bold tracking-widest mb-1">Oportunidades em Tempo Real</span>
+<h2 class="font-headline-md text-headline-md text-on-surface font-bold tracking-tight">OFERTAS DO GRUPO</h2>
+<p class="font-title-md text-title-md text-secondary mt-1">Veja o tipo de promoção que você pode encontrar por lá</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2 max-w-xs">
+        As oportunidades mudam constantemente conforme disponibilidade, datas e tarifas das companhias aéreas.
+      </p>
+</div>
+<!-- Cards de Destinos -->
+<div class="flex flex-col gap-4">
+<!-- Card 1: Nordeste -->
+<div class="w-full bg-surface-container-low rounded-xl overflow-hidden shadow-sm border border-outline-variant/30 flex flex-col">
+<div class="relative w-full h-44">
+<img class="w-full h-full object-cover" data-alt="Breathtaking tropical beach in Northeast Brazil with warm golden sand crystal turquoise waters swaying coconut palms under a bright sunny sky with vibrant saturated colors" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMa_B7KbfFjbz7FYWbQcoyYwvVhrNXZHpNmq4rz4kDmbQC_VO9IBfvbQk4Zxb3Q3MqB4IcmhTG4QI0UqWWWY81PC-IoeCPGLMk1fWCGs8Tx9aH_ilZNFIe4SQhX5UAqXGbmqxMIa9_CE4_eud9nRrWXCRVzjyk5s00-15SoKAsYbNVfHEdQlFO4RMJuiau2bBRL8C4FAShavcbppHclrdBl5v69GQCGzEMi37XxSvWIuTD8OPlT9emR-kdc9nvPb62TxKHbXL5Lq96pw">
+<div class="absolute top-3 left-3 bg-[#0464ae] text-white px-2.5 py-1 rounded-full font-label-sm text-label-sm font-bold shadow">
+            Nacional
+          </div>
+<div class="absolute bottom-2 right-2 bg-on-surface/75 backdrop-blur-md text-white px-2 py-0.5 rounded text-label-sm">
+            Praias &amp; Sol
+          </div>
+</div>
+<div class="p-4 flex flex-col">
+<div class="flex items-baseline justify-between mb-1">
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">NORDESTE</h3>
+<span class="font-label-sm text-label-sm text-primary-container font-bold">A partir de</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-2">Pacotes completos | Passagem aérea + hospedagem</p>
+<div class="flex items-center gap-1.5 text-on-surface mb-3">
+<span class="material-symbols-outlined text-[18px] text-primary-container">luggage</span>
+<span class="font-title-md text-title-md font-bold text-primary-container">R$ 1.590</span>
+<span class="font-body-sm text-body-sm text-secondary">/ por pessoa</span>
+</div>
+<a class="w-full flex items-center justify-center gap-1.5 py-2.5 rounded-lg bg-primary hover:bg-primary-container text-white font-label-md text-label-md active:opacity-90 transition-colors" href="https://wa.me/5551998277219">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+            VER PROMOÇÕES
+          </a>
+</div>
+</div>
+<!-- Card 2: Europa -->
+<div class="w-full bg-surface-container-low rounded-xl overflow-hidden shadow-sm border border-outline-variant/30 flex flex-col">
+<div class="relative w-full h-44">
+<img class="w-full h-full object-cover" data-alt="Charming European cobblestone street lined with historic classical architecture picturesque cafes outdoor umbrellas warm afternoon sunlight deep blue skies" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLM-_yJiZ5pejF16xGp0EIp26sE9uxZKsSuk56OJ-bQZm5pRweTpznpTKVUXeMKmaLj9_enj1Y3TdzXAd-OOTCVXqCu-fEGB5T_t03vgtZyHr6Gg6qHscMicQyjhhWrWmZ0NqhodM75-TCXvE2hFCdk1YYmoyxhtXT4QJ1kMyXUBLTi1KqT8Csbpyy8-gJlO5LL34pKmZXuK9_ugfJo-IWt63hp-k5GzUU8MjVVNrQqHesAaO1_9ba">
+<div class="absolute top-3 left-3 bg-[#022c54] text-white px-2.5 py-1 rounded-full font-label-sm text-label-sm font-bold shadow">
+            Internacional
+          </div>
+<div class="absolute bottom-2 right-2 bg-on-surface/75 backdrop-blur-md text-white px-2 py-0.5 rounded text-label-sm">
+            Eurotrip
+          </div>
+</div>
+<div class="p-4 flex flex-col">
+<div class="flex items-baseline justify-between mb-1">
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">EUROPA</h3>
+<span class="font-label-sm text-label-sm text-primary-container font-bold">A partir de</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-2">Passagens e pacotes | Portugal, Espanha, Itália, França e outros destinos</p>
+<div class="flex items-center gap-1.5 text-on-surface mb-3">
+<span class="material-symbols-outlined text-[18px] text-primary-container">flight</span>
+<span class="font-title-md text-title-md font-bold text-primary-container">R$ 3.490</span>
+</div>
+<a class="w-full flex items-center justify-center gap-1.5 py-2.5 rounded-lg bg-primary hover:bg-primary-container text-white font-label-md text-label-md active:opacity-90 transition-colors" href="https://wa.me/5551998277219">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+            VER PROMOÇÕES
+          </a>
+</div>
+</div>
+<!-- Card 3: Austrália -->
+<div class="w-full bg-surface-container-low rounded-xl overflow-hidden shadow-sm border border-outline-variant/30 flex flex-col">
+<div class="relative w-full h-44">
+<img class="w-full h-full object-cover" data-alt="Iconic Australian coastal view overlooking Sydney harbour with shimmering azure waters modern skyline clear open skies vibrant and aspirational mood" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMXw8S2eB6vBz60AFmeJ3LggfBKPyWr3U4EffTPUHx9EQV_jpjcxOZic9utikPsuVwKHpcEW-wnzYQ7H7myiHGiw4lEwgpJ-czaA77mtnSiotspc6W7TwU40HzbbSv6iEVJFFrz2tzQoAt5DCJgJ0n_Q6SlR0RecS-pvI65xfi5F8I0tHx1CLgq1qoQmSvr9s23FNT1040h2xm5aLshmWorwtZmvoy4GLUfFiAE8_KoYRkxNoPJjPy">
+<div class="absolute top-3 left-3 bg-[#0464ae] text-white px-2.5 py-1 rounded-full font-label-sm text-label-sm font-bold shadow">
+            Oceania
+          </div>
+<div class="absolute bottom-2 right-2 bg-on-surface/75 backdrop-blur-md text-white px-2 py-0.5 rounded text-label-sm">
+            Aventura
+          </div>
+</div>
+<div class="p-4 flex flex-col">
+<div class="flex items-baseline justify-between mb-1">
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">AUSTRÁLIA</h3>
+<span class="font-label-sm text-label-sm text-primary-container font-bold">A partir de</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-2">Passagens promocionais | Sydney, Melbourne, Perth e outros destinos</p>
+<div class="flex items-center gap-1.5 text-on-surface mb-3">
+<span class="material-symbols-outlined text-[18px] text-primary-container">flight_takeoff</span>
+<span class="font-title-md text-title-md font-bold text-primary-container">R$ 4.490</span>
+</div>
+<a class="w-full flex items-center justify-center gap-1.5 py-2.5 rounded-lg bg-primary hover:bg-primary-container text-white font-label-md text-label-md active:opacity-90 transition-colors" href="https://wa.me/5551998277219">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+            VER PROMOÇÕES
+          </a>
+</div>
+</div>
+<!-- Card 4: Ásia -->
+<div class="w-full bg-surface-container-low rounded-xl overflow-hidden shadow-sm border border-outline-variant/30 flex flex-col">
+<div class="relative w-full h-44">
+<img class="w-full h-full object-cover" data-alt="Majestic Asian travel destination featuring traditional pagoda temple nestled in exotic tropical nature with golden sunrise lighting inspiring tranquility and wanderlust" src="https://lh3.googleusercontent.com/aida-public/AB6AXuByw5br-cRE3Jd6Ph9Xekv2FVYGOF19v3cQarHS1zAG2WkK4Oua45OAfUFzK8dn6wh3UP6h9BrplVioJmZjuLi4sVVrsyua8rryVyJI8UGNSCbZOqKl5yJy17mGtoSVFiYUYtdbMTp9pQSPMqBKe7aVpGnhqEtAD3XJUVC8Monu4y3D8ZTpMYC1Hve7QmOgUjiAKRpaEnbOconFmyDJgMNhWVF6UAz1AbEsRzmLOSbSpVf7LCcZyvpL">
+<div class="absolute top-3 left-3 bg-[#022c54] text-white px-2.5 py-1 rounded-full font-label-sm text-label-sm font-bold shadow">
+            Ásia Exótica
+          </div>
+<div class="absolute bottom-2 right-2 bg-on-surface/75 backdrop-blur-md text-white px-2 py-0.5 rounded text-label-sm">
+            Cultura
+          </div>
+</div>
+<div class="p-4 flex flex-col">
+<div class="flex items-baseline justify-between mb-1">
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">ÁSIA</h3>
+<span class="font-label-sm text-label-sm text-primary-container font-bold">A partir de</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-2">China, Japão, Tailândia e muito mais | Passagens e pacotes especiais</p>
+<div class="flex items-center gap-1.5 text-on-surface mb-3">
+<span class="material-symbols-outlined text-[18px] text-primary-container">explore</span>
+<span class="font-title-md text-title-md font-bold text-primary-container">R$ 4.950</span>
+</div>
+<a class="w-full flex items-center justify-center gap-1.5 py-2.5 rounded-lg bg-primary hover:bg-primary-container text-white font-label-md text-label-md active:opacity-90 transition-colors" href="https://wa.me/5551998277219">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+            VER PROMOÇÕES
+          </a>
+</div>
+</div>
+</div>
+<!-- Dynamic Rates Disclaimer -->
+<div class="mt-4 p-3.5 bg-surface-container rounded-xl flex items-start gap-2.5 text-left border border-primary/10">
+<span class="material-symbols-outlined text-primary text-[20px] flex-shrink-0 mt-0.5">info</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-snug">
+        Valores e disponibilidades são dinâmicos e podem sofrer alterações. A emissão/reserva é o que garante a tarifa.
+      </p>
+</div>
+<!-- Intermediary CTA -->
+<div class="mt-4 flex flex-col items-center">
+<a class="w-full max-w-xs flex items-center justify-center gap-2 h-12 rounded-full bg-[#25D366] hover:bg-[#1ebd5b] text-white font-label-md text-label-md font-bold shadow-md active:scale-95 transition-all" href="https://chat.whatsapp.com/H2jgUQfgwQwDPpwHHBrO0p" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[20px]">notifications_active</span>
+        QUERO RECEBER AS PRÓXIMAS&nbsp; PROMOÇÕES
+      </a>
+</div>
+</section>
+<!-- POR QUE ENTRAR NO GRUPO? SECTION -->
+<section class="px-4 py-8 flex flex-col bg-surface">
+<div class="flex flex-col text-center items-center mb-6">
+<span class="font-label-sm text-label-sm text-primary-container uppercase font-bold tracking-wider mb-1">Vantagens Exclusivas</span>
+<h2 class="font-headline-md text-headline-md text-on-surface font-bold tracking-tight">POR QUE ENTRAR NO GRUPO?</h2>
+<p class="font-title-md text-title-md text-secondary font-semibold mt-1">A gente pesquisa. Você recebe as oportunidades.</p>
+</div>
+<!-- 6 Diferenciais Grid -->
+<div class="grid grid-cols-1 gap-3">
+<!-- 1 -->
+<div class="bg-surface-container-lowest p-4 rounded-xl shadow-sm border border-outline-variant/30 flex items-start gap-3.5">
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-primary-container flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">tune</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-title-md text-title-md text-on-surface font-bold">Promoções selecionadas</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Nossa equipe acompanha tarifas e oportunidades para compartilhar ofertas que realmente façam sentido.</p>
+</div>
+</div>
+<!-- 2 -->
+<div class="bg-surface-container-lowest p-4 rounded-xl shadow-sm border border-outline-variant/30 flex items-start gap-3.5">
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-primary-container flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">public</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-title-md text-title-md text-on-surface font-bold">Brasil e exterior</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Promoções de viagens nacionais e internacionais em um só lugar.</p>
+</div>
+</div>
+<!-- 3 -->
+<div class="bg-surface-container-lowest p-4 rounded-xl shadow-sm border border-outline-variant/30 flex items-start gap-3.5">
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-primary-container flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">support_agent</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-title-md text-title-md text-on-surface font-bold">Atendimento de verdade</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Gostou de uma promoção? Fale diretamente com nossa equipe pelo WhatsApp, sem robôs.</p>
+</div>
+</div>
+<!-- 4 -->
+<div class="bg-surface-container-lowest p-4 rounded-xl shadow-sm border border-outline-variant/30 flex items-start gap-3.5">
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-primary-container flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">verified_user</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-title-md text-title-md text-on-surface font-bold">Suporte do início ao fim</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Não é apenas comprar uma passagem. A BRP acompanha você antes, durante e depois da viagem.</p>
+</div>
+</div>
+<!-- 5 -->
+<div class="bg-surface-container-lowest p-4 rounded-xl shadow-sm border border-outline-variant/30 flex items-start gap-3.5">
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-primary-container flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">dataset</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-title-md text-title-md text-on-surface font-bold">Passagens e pacotes</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Aéreo, hospedagem, seguro viagem, transfers, passeios, cruzeiros, aluguel de carro e outros serviços para sua viagem.</p>
+</div>
+</div>
+<!-- 6 -->
+<div class="bg-surface-container-lowest p-4 rounded-xl shadow-sm border border-outline-variant/30 flex items-start gap-3.5">
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-primary-container flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">timer</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-title-md text-title-md text-on-surface font-bold">Oportunidades com vagas limitadas</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Algumas tarifas aparecem por pouco tempo. Quem está no grupo consegue acompanhar as oportunidades assim que forem divulgadas.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- VIAJE COM SEGURANÇA (Credibilidade & Confiança) -->
+<section class="px-4 py-8 flex flex-col bg-surface-container-low">
+<div class="flex flex-col text-center items-center mb-6">
+<span class="font-label-sm text-label-sm text-primary-container uppercase font-bold tracking-wider mb-1">Agência Regulamentada</span>
+<h2 class="font-headline-md text-headline-md text-on-surface font-bold tracking-tight">VIAJE COM SEGURANÇA</h2>
+<p class="font-title-md text-title-md text-secondary font-semibold mt-1">Não compre apenas pelo preço. Saiba com quem você está comprando.</p>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant text-center max-w-sm mx-auto mb-6">
+      A BRP Agência de Viagens e Turismo Ltda. é uma agência de viagens regulamentada e possui atendimento físico, oferecendo mais segurança e suporte em todas as etapas da sua viagem.
+    </p>
+<!-- Credential Card -->
+<div class="w-full bg-surface-container-lowest rounded-xl p-4 shadow-sm border border-outline-variant/30 flex flex-col gap-3">
+<div class="flex items-center gap-3 p-3 rounded-lg bg-surface-container-low border border-primary/10">
+<div class="w-9 h-9 rounded-full bg-primary/10 flex items-center justify-center text-primary-container flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">badge</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase">CNPJ Regularizado</span>
+<span class="font-title-md text-title-md text-on-surface font-semibold truncate">46.087.566/0001-01</span>
+</div>
+</div>
+<div class="flex items-center gap-3 p-3 rounded-lg bg-surface-container-low border border-primary/10">
+<div class="w-9 h-9 rounded-full bg-primary/10 flex items-center justify-center text-primary-container flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: &quot;FILL&quot; 1;">verified</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase">Cadastur Oficial</span>
+<span class="bg-primary-container/15 text-primary px-1.5 py-0.2 rounded font-label-sm text-label-sm font-bold">Ativo</span>
+</div>
+<span class="font-title-md text-title-md text-on-surface font-semibold truncate">46087566000101</span>
+</div>
+</div>
+<div class="flex items-center gap-3 p-3 rounded-lg bg-surface-container-low border border-primary/10">
+<div class="w-9 h-9 rounded-full bg-primary/10 flex items-center justify-center text-primary-container flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">storefront</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase">Loja física</span>
+<span class="font-body-sm text-body-sm text-on-surface leading-tight">Av. 28 de Maio, 1460 — Sala 02, Centro — Santa Clara do Sul/RS</span>
+</div>
+</div>
+<div class="flex items-center gap-3 p-3 rounded-lg bg-surface-container-low border border-primary/10">
+<div class="w-9 h-9 rounded-full bg-[#25D366]/15 flex items-center justify-center text-[#128C7E] flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">phone_iphone</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase">WhatsApp oficial</span>
+<span class="font-title-md text-title-md text-primary-container font-bold">(51) 99827-7219</span>
+</div>
+</div>
+</div>
+<!-- CTA Button -->
+<div class="mt-6 flex flex-col items-center">
+<a class="w-full max-w-xs flex items-center justify-center gap-2 h-12 rounded-full bg-primary text-white font-label-md text-label-md font-bold shadow-md hover:bg-primary-container active:scale-95 transition-all" href="https://chat.whatsapp.com/H2jgUQfgwQwDPpwHHBrO0p" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[20px]">lock_open</span>
+        QUERO ENTRAR NO GRUPO
+      </a>
+</div>
+</section>
+<!-- QUEM É A BRP VIAGENS? (História e Humanização) -->
+<section class="px-4 py-8 flex flex-col bg-surface-container-lowest">
+<div class="flex flex-col text-center items-center mb-6">
+<span class="font-label-sm text-label-sm text-primary-container uppercase font-bold tracking-wider mb-1">Nosso Propósito</span>
+<h2 class="font-headline-md text-headline-md text-on-surface font-bold tracking-tight">QUEM É A BRP VIAGENS?</h2>
+<p class="font-title-md text-title-md text-secondary font-semibold mt-1">Viajar faz parte da nossa história</p>
+</div>
+<div class="w-full max-w-sm mx-auto rounded-2xl overflow-hidden shadow-sm mb-6 border border-outline-variant/30"><img class="w-full h-auto object-cover" data-alt="Warm welcoming portrait of travel agency founders Paola and Bruno holding travel documents with maps in a modern cozy travel lounge ambient natural sunlight looking directly at the camera with sincere genuine smiles" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBciNAGCbMJdxThedJVpODULYL9qejJWgol-Hu24zsx9fY9vz3Us_8wjZadFzTHxDQzlq-8dVg1BnGNRVCEcOFn1W6dUKRSTq2K52YGqk3dc8tfnnniOXmHLv2cxl128S3wkACOypUH03dOOdFRXKGWzLrxr2jxkrU-YBT8xUI9IQuphPFZEC4e3pEPvkzQzPlSsUJn0LrmA9E0btc0YeChHmhZwfVJlnQ-P5R1nv8AcrI-kipyR-nfJdElJ8aLYoOA6jUEd57h2O8IsA"></div>
+<div class="space-y-3 text-on-surface-variant font-body-md text-body-md leading-relaxed text-left">
+<p class="">
+        A BRP Viagens nasceu da experiência de Paola e Bruno, que transformaram a paixão por viagens em uma agência focada em ajudar outras pessoas a conhecer o mundo com mais economia, segurança e tranquilidade.
+      </p>
+<p class="">
+        Depois de experiências internacionais, incluindo anos vivendo na China e viagens por diversos destinos da Ásia e Europa, surgiu o propósito de oferecer um atendimento diferente: próximo, humano e presente em todas as etapas.
+      </p>
+<p class="">
+        Desde 2022, a BRP Viagens ajuda seus clientes com passagens aéreas, pacotes, hospedagens e todo o suporte necessário para transformar planos de viagem em experiências inesquecíveis.
+      </p>
+</div>
+<!-- Frase de efeito destacada -->
+<div class="my-6 p-4 rounded-xl bg-surface-container border border-primary/20 text-center flex flex-col items-center">
+<span class="material-symbols-outlined text-primary-container text-[28px] mb-1">sentiment_satisfied_alt</span>
+<blockquote class="font-title-md text-title-md text-on-surface font-bold">
+        “Aqui você não fala com robô. Você fala com quem entende de viagem.”
+      </blockquote>
+</div>
+<!-- Botão CTA -->
+<div class="flex flex-col items-center">
+<a class="w-full max-w-xs flex items-center justify-center gap-2 h-12 rounded-full bg-secondary hover:bg-primary text-white font-label-md text-label-md font-bold shadow-md active:scale-95 transition-all" href="https://wa.me/5551998277219" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[20px]">explore</span>
+        CONHECER A BRP VIAGENS
+      </a>
+</div>
+</section>
+<!-- QUEM JÁ VIAJOU COM A BRP RECOMENDA (Depoimentos / Prova Social) -->
+<section class="px-4 py-8 flex flex-col bg-surface">
+<div class="flex flex-col text-center items-center mb-6">
+<span class="font-label-sm text-label-sm text-primary-container uppercase font-bold tracking-wider mb-1">Avaliações Reais</span>
+<h2 class="font-headline-md text-headline-md text-on-surface font-bold tracking-tight">QUEM JÁ VIAJOU COM A BRP RECOMENDA</h2>
+<p class="font-title-md text-title-md text-secondary font-semibold mt-1">Experiências reais dos nossos clientes</p>
+</div>
+<!-- 3 Cards de Depoimentos -->
+<div class="flex flex-col gap-3">
+<!-- Depoimento 1 -->
+<div class="bg-surface-container-lowest p-4 rounded-xl shadow-sm border border-outline-variant/30 flex flex-col">
+<div class="flex items-center justify-between mb-2">
+<div class="flex items-center gap-2.5">
+<div class="w-10 h-10 rounded-full bg-primary/10 text-primary-container flex items-center justify-center font-bold font-title-md">
+              MC
+            </div>
+<div>
+<span class="font-title-md text-title-md text-on-surface font-bold block leading-tight">Mariana Costa</span>
+<span class="font-label-sm text-label-sm text-secondary">Viagem para Lisboa</span>
+</div>
+</div>
+<div class="flex text-amber-400">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant italic leading-relaxed">
+          “Atendimento impecável da Paola e do Bruno! Economizei mais de R$ 1.500 na minha passagem para Lisboa e tive suporte durante todo o embarque.”
+        </p>
+</div>
+<!-- Depoimento 2 -->
+<div class="bg-surface-container-lowest p-4 rounded-xl shadow-sm border border-outline-variant/30 flex flex-col">
+<div class="flex items-center justify-between mb-2">
+<div class="flex items-center gap-2.5">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed text-primary flex items-center justify-center font-bold font-title-md">
+              RS
+            </div>
+<div>
+<span class="font-title-md text-title-md text-on-surface font-bold block leading-tight">Rodrigo Silveira</span>
+<span class="font-label-sm text-label-sm text-secondary">Pacote Nordeste</span>
+</div>
+</div>
+<div class="flex text-amber-400">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant italic leading-relaxed">
+          “O melhor grupo de viagens! Peguei um pacote para o Nordeste com preço incrível. Recomendo de olhos fechados!”
+        </p>
+</div>
+<!-- Depoimento 3 -->
+<div class="bg-surface-container-lowest p-4 rounded-xl shadow-sm border border-outline-variant/30 flex flex-col">
+<div class="flex items-center justify-between mb-2">
+<div class="flex items-center gap-2.5">
+<div class="w-10 h-10 rounded-full bg-primary-fixed text-primary flex items-center justify-center font-bold font-title-md">
+              CF
+            </div>
+<div>
+<span class="font-title-md text-title-md text-on-surface font-bold block leading-tight">Camila &amp; Felipe</span>
+<span class="font-label-sm text-label-sm text-secondary">Viagem para a Ásia</span>
+</div>
+</div>
+<div class="flex text-amber-400">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant italic leading-relaxed">
+          “Planejaram nossa viagem para a Ásia nos mínimos detalhes. Segurança e atenção do início ao fim.”
+        </p>
+</div>
+</div>
+<!-- Google link badge -->
+<a class="mt-4 mx-auto inline-flex items-center gap-2 px-4 py-2 rounded-full bg-surface-container text-secondary hover:text-on-surface transition-colors shadow-sm border border-outline-variant/30" href="https://share.google/hOzVexT55Ma4iMzMs" target="_blank" rel="noopener noreferrer">
+<span class="material-symbols-outlined text-[18px] text-amber-500" style="font-variation-settings: &quot;FILL&quot; 1;">reviews</span>
+<span class="font-label-sm text-label-sm font-bold">Ver todas as avaliações no Google (4.9/5 estrelas)</span>
+</a>
+</section>
+<!-- SEÇÃO FINAL / CTA FINAL DE ALTA CONVERSÃO -->
+<section class="relative px-4 py-10 flex flex-col items-center text-center bg-gradient-to-b from-[#03335a] to-[#02223c] text-white overflow-hidden">
+<div class="absolute -top-10 -right-10 w-44 h-44 rounded-full bg-cyan-500/20 blur-2xl pointer-events-none"></div>
+<div class="absolute -bottom-10 -left-10 w-44 h-44 rounded-full bg-primary-container/30 blur-2xl pointer-events-none"></div>
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/10 text-cyan-200 mb-3 backdrop-blur-sm border border-white/10">
+<span class="material-symbols-outlined text-[16px] text-cyan-300">flight_takeoff</span>
+<span class="font-label-sm text-label-sm font-bold tracking-wider uppercase">Embarque Garantido</span>
+</div>
+<h2 class="font-headline-md text-headline-md font-bold tracking-tight max-w-xs mb-1 text-white">
+      SUA PRÓXIMA VIAGEM PODE COMEÇAR AQUI
+    </h2>
+<p class="font-title-md text-title-md text-cyan-200 font-semibold max-w-xs mb-3">
+      Entre gratuitamente no Grupo de Promoções BRP Viagens
+    </p>
+<p class="font-body-md text-body-md text-white/80 max-w-sm mb-6 leading-relaxed">
+      Receba oportunidades de passagens, pacotes e viagens nacionais e internacionais diretamente no seu WhatsApp. Quando aparecer aquela oportunidade que combina com você, nossa equipe estará pronta para ajudar.
+    </p>
+<!-- Big CTA -->
+<a class="w-full max-w-xs flex items-center justify-center gap-2.5 h-14 rounded-full bg-[#25D366] hover:bg-[#1ebd5b] text-white shadow-xl shadow-[#25D366]/30 active:scale-95 transition-all" href="https://chat.whatsapp.com/H2jgUQfgwQwDPpwHHBrO0p" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[24px]">chat</span>
+<span class="font-label-md text-label-md font-bold tracking-wide">QUERO ENTRAR NO GRUPO AGORA</span>
+</a>
+<!-- Subtexto de garantia -->
+<p class="font-label-sm text-label-sm text-white/70 mt-3 flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-cyan-300">lock</span>
+      Gratuito • Sem spam • Você pode sair quando quiser
+    </p>
+</section>
+<!-- FOOTER COMPLETO -->
+<footer class="px-4 pt-8 pb-6 flex flex-col bg-[#022c54] text-white">
+<!-- Brand Info -->
+<div class="flex flex-col items-center text-center mb-6">
+<div class="mb-3 py-1 px-3 rounded-lg bg-[#03335a] border border-white/10 inline-flex items-center justify-center shadow-inner">
+<img alt="BRP Viagens" class="h-10 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1V2RxNqttRD6iEF6BBrKmTd8jZZriI-a-HS958RWwn1CVFxbIp-AqdmBxbbtPZNqzk_tYaGC33XPsHjnPiXPitoBgGsJbgyd3KfAHjl7r3Gp6Aaw7YjtYQOYt2HCsOrRnaxa7LPJQqrU86ZSHuT4rNKOglA2iBu2JiiqZD_QYzzyRbElGH2lUYJPu8nQIrWMeAnVM0RxTuagcUcocl0RtOOR87VSKlC_SKcCx0X_XR235SVoE7vm46VICg">
+</div>
+<p class="font-body-sm text-body-sm text-cyan-100/80 max-w-xs leading-relaxed">
+        Passagens • Pacotes • Hotéis • Seguro Viagem • Transfers • Passeios • Cruzeiros • Aluguel de Carros
+      </p>
+</div>
+<!-- Official Registry and Address -->
+
+<!-- Social & Contact Links -->
+<div class="flex items-center justify-center gap-4 mb-6">
+<a class="flex items-center gap-1 font-label-md text-label-md text-cyan-200 hover:text-white transition-colors" href="https://instagram.com" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">photo_camera</span>
+        Instagram
+      </a>
+<span class="text-white/30">•</span>
+<a class="flex items-center gap-1 font-label-md text-label-md text-cyan-200 hover:text-white transition-colors" href="#">
+<span class="material-symbols-outlined text-[18px]">language</span>
+        Site
+      </a>
+<span class="text-white/30">•</span>
+<a class="flex items-center gap-1 font-label-md text-label-md text-[#25D366] hover:text-[#25D366]/90 font-bold" href="https://wa.me/5551998277219" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+        WhatsApp
+      </a>
+</div>
+<!-- Copyright -->
+<div class="pt-3 border-t border-white/10 text-center">
+<p class="font-label-sm text-label-sm text-white/60">
+        © 2026 BRP Viagens. Todos os direitos reservados.
+      </p>
+</div>
+</footer>
+</div></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/95 backdrop-blur-xl shadow-[0_-4px_20px_rgba(7,29,44,0.12)] border-t border-outline-variant/30" data-active-classes="text-primary-container font-bold"><div class="h-16 px-4 flex items-center justify-between gap-3"><a aria-current="page" class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] transition-colors text-primary-container font-bold" data-path="promocoes" href="#"><span class="material-symbols-outlined text-[24px]">local_fire_department</span><span class="font-label-sm text-label-sm">Ofertas</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] text-on-surface-variant hover:text-primary transition-colors" data-path="destinos" href="#"><span class="material-symbols-outlined text-[24px]">flight_takeoff</span><span class="font-label-sm text-label-sm">Destinos</span></a><a class="flex-1 flex items-center justify-center gap-2 h-11 px-4 rounded-full bg-[#25D366] hover:bg-[#1ebd5b] text-white shadow-md shadow-[#25D366]/20 transition-all transform active:scale-95" data-path="entrar-vip" href="https://chat.whatsapp.com/H2jgUQfgwQwDPpwHHBrO0p" target="_blank" rel="noopener noreferrer"><span class="material-symbols-outlined text-[20px]">chat</span><span class="font-label-md text-label-md font-bold whitespace-nowrap">Entrar no Grupo WhatsApp</span></a></div></nav>
+
+
+
+</body></html>
