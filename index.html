@@ -4,6 +4,10 @@
       min-height: max(884px, 100dvh);
     }
 
+
+
+    
+  </style>
 <!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
@@ -21,9 +25,7 @@ fbq('track', 'PageView');
 src="https://www.facebook.com/tr?id=1621352119589991&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
-
     
-  </style>
 </head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 w-full z-50 pt-safe bg-[#03335a] shadow-[0_4px_15px_rgba(3,51,90,0.25)]"><div class="h-16 px-4 flex items-center justify-between gap-3"><div class="flex items-center gap-3"><div class="py-1 px-1.5 rounded-lg flex items-center"><img alt="BRP Viagens Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1V2RxNqttRD6iEF6BBrKmTd8jZZriI-a-HS958RWwn1CVFxbIp-AqdmBxbbtPZNqzk_tYaGC33XPsHjnPiXPitoBgGsJbgyd3KfAHjl7r3Gp6Aaw7YjtYQOYt2HCsOrRnaxa7LPJQqrU86ZSHuT4rNKOglA2iBu2JiiqZD_QYzzyRbElGH2lUYJPu8nQIrWMeAnVM0RxTuagcUcocl0RtOOR87VSKlC_SKcCx0X_XR235SVoE7vm46VICg"></div><div class="h-6 w-px bg-white/20"></div><div class="flex flex-col"><span class="font-label-sm text-label-sm text-cyan-300 font-bold tracking-wider uppercase flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>Grupo Promocional</span></div></div><div class="flex items-center gap-2"><div class="flex items-center gap-1 bg-white/10 px-2.5 py-1 rounded-full text-white/90 font-label-sm text-label-sm border border-white/10"><span class="material-symbols-outlined text-[16px] text-cyan-300">verified</span>Cadastur</div><div class="w-8 h-8 rounded-full bg-primary-container text-white flex items-center justify-center shadow-inner"><span class="material-symbols-outlined text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-16 pb-24 bg-surface min-h-screen"><div class="flex flex-col w-full">
 <!-- HERO SECTION -->
 <section class="relative px-4 pt-6 pb-8 flex flex-col items-center text-center overflow-hidden">
@@ -538,6 +540,15 @@ src="https://www.facebook.com/tr?id=1621352119589991&ev=PageView&noscript=1"
 </footer>
 </div></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/95 backdrop-blur-xl shadow-[0_-4px_20px_rgba(7,29,44,0.12)] border-t border-outline-variant/30" data-active-classes="text-primary-container font-bold"><div class="h-16 px-4 flex items-center justify-between gap-3"><a aria-current="page" class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] transition-colors text-primary-container font-bold" data-path="promocoes" href="#"><span class="material-symbols-outlined text-[24px]">local_fire_department</span><span class="font-label-sm text-label-sm">Ofertas</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] text-on-surface-variant hover:text-primary transition-colors" data-path="destinos" href="#"><span class="material-symbols-outlined text-[24px]">flight_takeoff</span><span class="font-label-sm text-label-sm">Destinos</span></a><a class="flex-1 flex items-center justify-center gap-2 h-11 px-4 rounded-full bg-[#25D366] hover:bg-[#1ebd5b] text-white shadow-md shadow-[#25D366]/20 transition-all transform active:scale-95" data-path="entrar-vip" href="https://chat.whatsapp.com/H2jgUQfgwQwDPpwHHBrO0p" target="_blank" rel="noopener noreferrer"><span class="material-symbols-outlined text-[20px]">chat</span><span class="font-label-md text-label-md font-bold whitespace-nowrap">Entrar no Grupo WhatsApp</span></a></div></nav>
 
+<script>
+document.addEventListener('click', function (event) {
+  var link = event.target.closest('a[href]');
+  if (!link || link.hostname !== 'chat.whatsapp.com') return;
 
+  if (typeof window.fbq === 'function') {
+    window.fbq('trackCustom', 'CliqueGrupoWhatsApp');
+  }
+});
+</script>
 
 </body></html>
